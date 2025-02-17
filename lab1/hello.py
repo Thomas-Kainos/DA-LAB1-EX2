@@ -1,7 +1,8 @@
 from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel, Field
-from math_operations import add, subtract, multiply, divide
+from math_functions import add, subtract, multiply, divide
 import logging
+import uvicorn
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
